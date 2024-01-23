@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quixil Gaming - Downloads</title>
+    <link rel="stylesheet" href="quixil_style.css"> 
+</head>
+<body>
+    <header>
+        <h1 class="site-name">Quixil Gaming</h1>
+        <nav>
+            <ul>
+                <li><a href="quixil_login.html">Home</a></li>
+                <li><a href="games_login.html">Games</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="about_login.html">About Us</a></li>
+                <li><a href="contact_login.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Download History</h1>
+    <ul id="download-history-list"></ul>
+    <button class="clear-history-button" id="clear-history-button" onclick="clearDownloadHistory()">Clear History</button>
+
+    <script src="quixil_script.js"></script>
+    <script>
+        window.onload = displayDownloadHistory;
+    </script>
+</body>
+</html>

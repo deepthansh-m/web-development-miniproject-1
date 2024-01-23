@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Quixil Gaming</title>
+    <link rel="stylesheet" href="quixil_style.css">
+</head>
+<body>
+
+    <header>
+      <h1 class="site-name">Quixil Gaming</h1>
+        <nav>
+            <ul>
+                <li><a href="quixil.html" onclick="disopenc()">Home</a></li>
+                <li><a href="games.html" onclick="showAlert1()">Games</a></li>
+                <li><a href="#" onclick="showAlert2()">Downloads</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="signup">
+      <center>
+        <h2>Signup</h2>
+        <form id="signup-form">
+          <table>
+          <tr>
+            <td>Username::</td>
+            <td><input type="text" name="username" id="set-username" required></td>
+            </tr>
+        <tr>
+            <td>Phone No::</td>
+            <td><input type="tel" name="phone no" id="set-phone"  required></td>
+            </tr>
+        <tr>
+            <td>Email::</td>
+            <td><input type="email" name="email" id="set-email"  required></td>
+            </tr>
+          <tr>
+            <td>New Password::</td>
+            <td><input type="password" placeholder="Password" id="set-password" required></td>
+            </tr>
+        <tr>
+            <td>Confirm Password::</td>
+            <td><input type="password" placeholder="Confirm Password" id="set-confirm_password" required></td>
+            </tr>
+          <tr>
+              <td><button type="button" id="signup" onclick="signup()">Create Account</button></td>
+              <td><button type="reset" id="reset">Reset</button></td>
+              </tr>
+            <tr>
+            <tr>
+                <td colspan="2"><p>Already have an account? <a href="login page.html">Log in here</a></p></td>
+                </tr>
+          </table>
+      </form>
+    </center>
+    </section>
+    <script src="quixil_script.js"></script>
+    <script>
+      document.getElementById('signup').addEventListener('click', signup);
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Quixil Gaming</title>
+    <link rel="stylesheet" href="quixil_style.css">
+</head>
+<body>
+
+    <header>
+      <h1 class="site-name">Quixil Gaming</h1>
+        <nav>
+            <ul>
+                <li><a href="quixil.html" onclick="disopenc()">Home</a></li>
+                <li><a href="games.html" onclick="showAlert1()">Games</a></li>
+                <li><a href="#" onclick="showAlert2()">Downloads</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="login_page">
+      <center>
+         <h2>Login</h2>
+        <form id="login-form">
+          <table>
+          <tr>
+            <td><label for="username">Username::</label></td>
+            <td><input type="text" name="username" id="username" required></td>
+            </tr>
+          <tr>
+            <td><label for="password">Password::</label></td>
+            <td><input type="password" name="password" id="password" required></td>
+            </tr>
+          <tr>
+            <td><label for="email">Email::</label></td>
+            <td><input type="email" name="email" id="email" required></td>
+            </tr>
+          <tr>
+            <td><button type="submit" id="submit">Login</button></td>
+            <td><button type="reset" id="reset">Reset</button></td>
+            </tr>
+          <tr>
+            <td colspan="2"><p>Don't have an account? <a href="signup.html">Sign up here</a></p></td>
+            </tr>
+          <tr>
+            <td colspan="2"><center><p><a href="resetpassward.html">Forgot Password?</a></p></center></td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    </section>
+  <script src="quixil_script.js"></script>
+    
+
+</body>
+</html>
