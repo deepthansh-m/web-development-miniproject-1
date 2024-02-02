@@ -63,7 +63,7 @@ function resetPassword() {
             var updatedUsers = [...users];
             updatedUsers[foundUserIndex] = { ...updatedUsers[foundUserIndex], password: newPassword };
 
-            var users = updatedUsers;
+            users = updatedUsers;
             localStorage.setItem('users', JSON.stringify(users));
 
             window.location.replace('login page.html');
@@ -124,9 +124,9 @@ function signup() {
             password: newPassword,
             email: newEmail,
             phone :newPhone,
-            };
+        };
 
-            users.push(user);
+        users.push(user);
             
         localStorage.setItem('users', JSON.stringify(users));
 
