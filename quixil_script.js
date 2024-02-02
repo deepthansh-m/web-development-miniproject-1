@@ -14,13 +14,24 @@ document.addEventListener("DOMContentLoaded", function () {
     var loggedInUser = sessionStorage.getItem('loggedInUser');
     document.getElementById('user-greeting').textContent = 'Welcome, ' + loggedInUser;
 
+    var isopen = 0;
     mobileMenu.addEventListener('click', toggleDropdown);
-
+    document.addEventListener('click', closeDropdown);
+    
     function toggleDropdown() {
         if (dropdownMenu.style.display === 'block') {
             dropdownMenu.style.display = 'none';
+            isopen = 0;
         } else {
             dropdownMenu.style.display = 'block';
+            isopen = 1;
+        }
+    }
+    function closeDropdown(event) {
+        if (!mobileMenu.contains(event.target) && !dropdownMenu.contains(event.target))
+        {
+            dropdownMenu.style.display = 'none';
+            isopen = 0;
         }
     }
     loadingBar.style.width = "30%";
