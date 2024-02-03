@@ -61,7 +61,7 @@ h1 {
 .dot {
     width: 20px;
     height: 4px;
-    background-color: white; /* Set a contrasting color for visibility */
+    background-color: white;
     border-radius: 2px;
     margin-bottom: 5px;
     cursor: pointer;
@@ -73,7 +73,7 @@ h1 {
     width: 10px;
 }
 .main-container {
-    display: none; /* Initially hide the main content */
+    display: none;
 }
 header {
     background-color: #333;
@@ -199,9 +199,9 @@ footer {
     margin-right: 5px;
 }
 .search-bar {
-    margin: 0 auto; /* Center the search bar horizontally */
+    margin: 0 auto; 
     text-align: center;
-    padding: 10px; /* Add padding for spacing */
+    padding: 10px; 
 }
 #search-input {
     padding: 8px;
@@ -344,7 +344,7 @@ button {
 }
 
 #download-history-list li:before {
-    content: '\2022'; /* Add a bullet point before each list item */
+    content: '\2022';
     color: #007bff;
     margin-right: 5px;
 }

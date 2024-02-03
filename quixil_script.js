@@ -3,7 +3,7 @@ var users = JSON.parse(localStorage.getItem('users')) || [];
 users = [
     { username: 'user1', password: 'password1', email: 'user1@example.com', phone: '123' },
     { username: 'Deepthansh M', password: 'Dimpu@2004', email: 'deepthanshm@gmail.com', phone: '7019434002' },
-    // Add more users as needed
+    // add user
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
