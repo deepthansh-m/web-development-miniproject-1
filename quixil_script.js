@@ -198,3 +198,13 @@ function searchGames() {
         }
     });
 }
+function color()
+{
+    var x=document.getElementById("color");
+    x.style.backgroundColor="#ff4d4d"
+}
+function color1()
+{
+    var x=document.getElementById("color");
+    x.style.backgroundColor="#ff0000"
+}
